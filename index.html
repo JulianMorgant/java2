@@ -35,18 +35,18 @@
     //Utilisation
 
     var tab = [56, 78, 34, 32, 22, 11, 23];
-    var tempString = "<span style='color:red'><table style='width:10%' border = '1px solid black border'>";
-    var tempString2 = "<span style='color:blue'><table style='width:10%' border = '1px solid black border'>";
+    var tempString = "<span style='color:blue'><table style='width:10%' border = '1px solid black border'>";
+    var tempString2 = "<span style='color:red'><table style='width:10%' border = '1px solid black border'>";
     for (var i = 0; i < tab.length; i++) {
 
-        if (tab[i] > 32) {
+        if (tab[i] > 34) {
             tempString = tempString + "<tr><th>" + tab[i] + " </th></tr>";
         }else{
             tempString2 = tempString2 + "<tr><th>" + tab[i] + " </th></tr>";
         }
     }
-    tempString = tempString + "</span>";
-    tempString2 = tempString2 + "</span>";
+    tempString = tempString + "</table></span>";
+    tempString2 = tempString2 + "</table></span>";
     
 
     /*
