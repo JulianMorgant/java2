@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exo 3</title>
+    <title >Exo 3</title>
 </head>
 
 <body>
 
-    <h1 id=indexId></h1>
+    <h1 style="color:rgb(185, 58, 164)" id=indexId></h1>
     <p>Lorem ipsum dolor sit amet.</p>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur nam ducimus dolor recusandae,
+    <span style="color:rgb(47, 157, 165)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consectetur nam ducimus dolor recusandae,
         sapiente qui adipisci est numquam. Nulla sapiente voluptates similique obcaecati possimus harum quos tenetur
         provident, distinctio fugiat veniam natus, unde excepturi fuga consequuntur labore corrupti quaerat.</span>
 </body>
@@ -35,14 +35,14 @@
     //Utilisation
 
     var tab = [56, 78, 34, 32, 22, 11, 23];
-    var tempString = "";
-
+    var tempString = "<span style='color:lime'> <ul type='square' >";
     for (var i = 0; i < tab.length; i++) {
 
-        if (tab[i] > 35) {
-            tempString = tempString + tab[i] + " <BR>";
+        if (tab[i] > 2) {
+            tempString = tempString + "<li>" + tab[i] + " </li>";
         }
     }
+    tempString = tempString + "<ul></span>";
 
     /*
 
